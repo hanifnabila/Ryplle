@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <div class="w-full fixed left-0 top-0">
+    {{-- Top Navbar --}}
+    <div class="w-full fixed left-0 top-0 drop-shadow-2xl">
         <div class="flex px-7 bg-gray-800 items-center justify-between">
             <div class="cursor-pointer flex">
                 <span class="mr-2 pt-0">
@@ -46,6 +47,97 @@
         </div>
     </div>
     </div>
+    {{-- End Top Navbar --}}
+
+    {{-- Side Bar --}}
+    <div class="w-[216px] fixed top-[60px] h-screen">
+        <div class="bg-gray-600 h-full">
+            <div class="flex text-left text-white pt-4 pb-4 pl-2 items-center">
+                <p class="text-[15px] font-bold">FOLLOWED RYPPLER</p>
+                <ion-icon name="arrow-back" class="ml-8 cursor-pointer text-[18px]" id="arrowBack"></ion-icon>
+            </div>
+            <div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div>
+            <div class="text-left text-white pt-4 pb-4 pl-2">
+                <p class="text-[15px] font-bold">RECOMMENDED RYPPLER</p>
+            </div>
+            <div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div><div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div><div class="flex items-center">
+                <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
+                <div class="justify-center items-center ml-2">
+                    <p class="text-[12px] font-semibold text-white">VALORANT</p>
+                    <p class="text-[10px] text-white">VALORANT</p>
+                </div>
+                <div class="flex items-center">
+                    <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
+                    <p class="text-[15px] text-white ml-1">6.6K</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var profilButton = document.querySelector('#profilButton');
