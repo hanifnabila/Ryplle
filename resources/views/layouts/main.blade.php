@@ -54,6 +54,12 @@
             profilButton.addEventListener('click', function() {
                 profileDropdownMenu.classList.toggle('hidden');
             });
+
+            document.addEventListener('click', function(event) {
+                if (!profilButton.contains(event.target) && !profileDropdownMenu.contains(event.target)) {
+                    profileDropdownMenu.classList.add('hidden');
+                }
+            });
         });
     </script>
 </body>
