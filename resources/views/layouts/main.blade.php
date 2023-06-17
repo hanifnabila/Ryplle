@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-gray-900">
     {{-- Top Navbar --}}
     <div class="w-full fixed left-0 top-0 drop-shadow-2xl">
         <div class="flex px-7 bg-gray-800 items-center justify-between">
@@ -31,9 +31,8 @@
                 </button>
                 <div>
                     <button id="profilButton"><img src="{{ asset('images/logos/accountProfile.png') }}"
-                            class="rounded-full w-7" alt=""></button>
-                    <div class="absolute right-6 mt-2 w-48 hidden bg-gray-700 rounded-md shadow-lg text-white"
-                        id="profileDropdownMenu">
+                            class="rounded-full w-7" onclick="OpenProfileAccount()" alt=""></button>
+                    <div class="profile absolute right-6 mt-2 w-48 hidden bg-gray-700 rounded-md shadow-lg text-white">
                         <div class="flex items-center">
                             <img src="{{ asset('images/logos/accountProfile.png') }}" width="40"
                                 class="rounded-full mt-2 ml-2" alt="">
@@ -50,11 +49,24 @@
     {{-- End Top Navbar --}}
 
     {{-- Side Bar --}}
-    <div class="w-[216px] fixed top-[60px] h-screen">
-        <div class="bg-gray-600 h-full">
+    <div class="fixed top-[60px] bg-gray-700 h-full flex flex-col items-center px-2" >
+        <div class="hover:bg-gray-500">
+            <ion-icon name="arrow-round-forward" class="text-white text-lg mt-2 cursor-pointer" onclick="OpenSideBar()"></ion-icon>
+        </div>
+        <div class="">
+            <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
+            <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
+            <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
+            <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
+            <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
+            <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
+        </div>
+    </div>
+    <div class="w-[216px] sidebar fixed top-[60px] bottom-0 left-[-300px] h-screen overflow-y-auto">
+        <div class="bg-gray-600 h-full" id="sideBarMenu">
             <div class="flex text-left text-white pt-4 pb-4 pl-2 items-center">
                 <p class="text-[15px] font-bold">FOLLOWED RYPPLER</p>
-                <ion-icon name="arrow-back" class="ml-8 cursor-pointer text-[18px]" id="arrowBack"></ion-icon>
+                <ion-icon name="arrow-back" class="ml-8 cursor-pointer text-[18px] hover:bg-gray-500" id="arrowBack" onclick="OpenSideBar()"></ion-icon>
             </div>
             <div class="flex items-center">
                 <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
@@ -135,24 +147,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div
 
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.js" defer></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var profilButton = document.querySelector('#profilButton');
-            var profileDropdownMenu = document.querySelector('#profileDropdownMenu');
+        function OpenSideBar(){
+            document.querySelector('.sidebar').classList.toggle('left-[-300px]');
+        }
 
-            profilButton.addEventListener('click', function() {
-                profileDropdownMenu.classList.toggle('hidden');
-            });
-
-            document.addEventListener('click', function(event) {
-                if (!profilButton.contains(event.target) && !profileDropdownMenu.contains(event.target)) {
-                    profileDropdownMenu.classList.add('hidden');
-                }
-            });
-        });
+        function OpenProfileAccount(){
+            document.querySelector('.profile').classList.toggle('hidden');
+        }
     </script>
 </body>
 
