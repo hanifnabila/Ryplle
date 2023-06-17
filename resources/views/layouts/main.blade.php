@@ -172,10 +172,10 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer ">LIVE:BetBoom Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
-                                <p class="text-gray-400">ESL_DOTA2</p>
-                                <p class="text-gray-400">Dota 2</p>
+                                <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
+                                <p class="text-gray-400 cursor-pointer">Dota 2</p>
                             </div>
                         </div>
                     </div>
@@ -187,10 +187,10 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
-                                <p class="text-gray-400">ESL_DOTA2</p>
-                                <p class="text-gray-400">Dota 2</p>
+                                <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
+                                <p class="text-gray-400 cursor-pointer">Dota 2</p>
                             </div>
                         </div>
                     </div>
@@ -202,10 +202,10 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
-                                <p class="text-gray-400">ESL_DOTA2</p>
-                                <p class="text-gray-400">Dota 2</p>
+                                <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
+                                <p class="text-gray-400 cursor-pointer">Dota 2</p>
                             </div>
                         </div>
                     </div>
@@ -217,10 +217,10 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
-                                <p class="text-gray-400">ESL_DOTA2</p>
-                                <p class="text-gray-400">Dota 2</p>
+                                <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
+                                <p class="text-gray-400 cursor-pointer">Dota 2</p>
                             </div>
                         </div>
                     </div>
@@ -232,10 +232,10 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
-                                <p class="text-gray-400">ESL_DOTA2</p>
-                                <p class="text-gray-400">Dota 2</p>
+                                <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
+                                <p class="text-gray-400 cursor-pointer">Dota 2</p>
                             </div>
                         </div>
                     </div>
@@ -247,10 +247,10 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
-                                <p class="text-gray-400">ESL_DOTA2</p>
-                                <p class="text-gray-400">Dota 2</p>
+                                <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
+                                <p class="text-gray-400 cursor-pointer">Dota 2</p>
                             </div>
                         </div>
                     </div>
