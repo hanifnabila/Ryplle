@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-gray-900">
+<body class="bg-gray-900 ">
     {{-- Top Navbar --}}
     <div class="w-full fixed left-0 top-0 drop-shadow-2xl z-50">
         <div class="flex px-7 bg-gray-800 items-center justify-between">
@@ -154,45 +154,112 @@
     </div>
     <div class="z-0 bg-gray-900 w-full h-full">
         <div class="content mt-[60px] ml-[50px] ml-[216px] h-full">
-            <div class="m-8">
+            <div class="m-8 mt-4">
+
+                <p class="font-bold text-lg text-white mt-20">Highlights For You!</p>
                 <div class="flex p-2 justify-center">
                     <img src="{{ asset('images/logos/valo.jpg') }}" class="w-[435px] m-2" alt="">
                     <img src="{{ asset('images/logos/valo.jpg') }}" class="w-[435px] m-2" alt="">
                 </div>
                 <p class="font-bold text-lg text-white"><span class="text-purple-400">Live channels</span> we think
                     you'll like</p>
-                <div class="flex">
-                    <iframe class=" w-[23rem] m-2"
-                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                        allowfullscreen></iframe>
-                    <iframe class=" w-[23rem] m-2"
-                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                        allowfullscreen></iframe>
-                    <iframe class=" w-[23rem] m-2"
-                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                        allowfullscreen></iframe>
-                    <iframe class=" w-[23rem] m-2"
-                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                        allowfullscreen></iframe>
+                <div class="flex mt-2 flex-wrap gap-4 justify-start">
+                    <div>
+                        <iframe class=" w-[18rem] my-2 "
+                            src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                            allowfullscreen></iframe>
+                        <div class="flex overflow-hidden w-[18rem]">
+                            <img src="{{ asset('images/logos/accountProfile.png') }}"
+                                class="rounded-full w-10 h-10 m-2" alt="">
+                            <div class="flex-col flex">
+                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                    Geniuses - Dream League Sesson 2</p>
+                                <p class="text-gray-400">ESL_DOTA2</p>
+                                <p class="text-gray-400">Dota 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class=" w-[18rem] my-2 "
+                            src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                            allowfullscreen></iframe>
+                        <div class="flex overflow-hidden w-[18rem]">
+                            <img src="{{ asset('images/logos/accountProfile.png') }}"
+                                class="rounded-full w-10 h-10 m-2" alt="">
+                            <div class="flex-col flex">
+                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                    Geniuses - Dream League Sesson 2</p>
+                                <p class="text-gray-400">ESL_DOTA2</p>
+                                <p class="text-gray-400">Dota 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class=" w-[18rem] my-2 "
+                            src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                            allowfullscreen></iframe>
+                        <div class="flex overflow-hidden w-[18rem]">
+                            <img src="{{ asset('images/logos/accountProfile.png') }}"
+                                class="rounded-full w-10 h-10 m-2" alt="">
+                            <div class="flex-col flex">
+                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                    Geniuses - Dream League Sesson 2</p>
+                                <p class="text-gray-400">ESL_DOTA2</p>
+                                <p class="text-gray-400">Dota 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class=" w-[18rem] my-2 "
+                            src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                            allowfullscreen></iframe>
+                        <div class="flex overflow-hidden w-[18rem]">
+                            <img src="{{ asset('images/logos/accountProfile.png') }}"
+                                class="rounded-full w-10 h-10 m-2" alt="">
+                            <div class="flex-col flex">
+                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                    Geniuses - Dream League Sesson 2</p>
+                                <p class="text-gray-400">ESL_DOTA2</p>
+                                <p class="text-gray-400">Dota 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class=" w-[18rem] my-2 "
+                            src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                            allowfullscreen></iframe>
+                        <div class="flex overflow-hidden w-[18rem]">
+                            <img src="{{ asset('images/logos/accountProfile.png') }}"
+                                class="rounded-full w-10 h-10 m-2" alt="">
+                            <div class="flex-col flex">
+                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                    Geniuses - Dream League Sesson 2</p>
+                                <p class="text-gray-400">ESL_DOTA2</p>
+                                <p class="text-gray-400">Dota 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class=" w-[18rem] my-2 "
+                            src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                            allowfullscreen></iframe>
+                        <div class="flex overflow-hidden w-[18rem]">
+                            <img src="{{ asset('images/logos/accountProfile.png') }}"
+                                class="rounded-full w-10 h-10 m-2" alt="">
+                            <div class="flex-col flex">
+                                <p class="text-white whitespace-nowrap overflow-ellipsis">LIVE:BetBoom Team vs. Evil
+                                    Geniuses - Dream League Sesson 2</p>
+                                <p class="text-gray-400">ESL_DOTA2</p>
+                                <p class="text-gray-400">Dota 2</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <hr class="mt-5">
             </div>
-            <div class="m-5">
-                <p class="font-bold text-lg text-white">Recommended<span class="text-purple-400"> Dota 2</span> channels</p>
-            </div>
-            <div class="flex">
-                <iframe class=" w-[23rem] m-2"
-                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                    allowfullscreen></iframe>
-                <iframe class=" w-[23rem] m-2"
-                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                    allowfullscreen></iframe>
-                <iframe class=" w-[23rem] m-2"
-                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                    allowfullscreen></iframe>
-                <iframe class=" w-[23rem] m-2"
-                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
-                    allowfullscreen></iframe>
+            <div class="m-8">
+                <p class="font-bold text-lg text-white">Recommended<span class="text-purple-400"> Dota 2</span>
+                    channels</p>
             </div>
         </div>
     </div>
