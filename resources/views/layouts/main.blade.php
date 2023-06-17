@@ -12,7 +12,7 @@
 
 <body class="bg-gray-900">
     {{-- Top Navbar --}}
-    <div class="w-full fixed left-0 top-0 drop-shadow-2xl">
+    <div class="w-full fixed left-0 top-0 drop-shadow-2xl z-50">
         <div class="flex px-7 bg-gray-800 items-center justify-between">
             <div class="cursor-pointer flex">
                 <span class="mr-2 pt-0">
@@ -49,9 +49,10 @@
     {{-- End Top Navbar --}}
 
     {{-- Side Bar --}}
-    <div class="fixed top-[60px] bg-gray-700 h-full flex flex-col items-center px-2" >
+    <div class="fixed top-[60px] bg-gray-700 h-full flex flex-col items-center px-2">
         <div class="hover:bg-gray-500">
-            <ion-icon name="arrow-round-forward" class="text-white text-lg mt-2 cursor-pointer" onclick="OpenSideBar()"></ion-icon>
+            <ion-icon name="arrow-round-forward" class="text-white text-lg mt-2 cursor-pointer" onclick="OpenSideBar()">
+            </ion-icon>
         </div>
         <div class="">
             <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-8 mt-3 rounded-full" alt="">
@@ -66,7 +67,8 @@
         <div class="bg-gray-600 h-full" id="sideBarMenu">
             <div class="flex text-left text-white pt-4 pb-4 pl-2 items-center">
                 <p class="text-[15px] font-bold">FOLLOWED RYPPLER</p>
-                <ion-icon name="arrow-back" class="ml-8 cursor-pointer text-[18px] hover:bg-gray-500" id="arrowBack" onclick="OpenSideBar()"></ion-icon>
+                <ion-icon name="arrow-back" class="ml-8 cursor-pointer text-[18px] hover:bg-gray-500" id="arrowBack"
+                    onclick="OpenSideBar()"></ion-icon>
             </div>
             <div class="flex items-center">
                 <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
@@ -125,7 +127,8 @@
                     <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
                     <p class="text-[15px] text-white ml-1">6.6K</p>
                 </div>
-            </div><div class="flex items-center">
+            </div>
+            <div class="flex items-center">
                 <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
                 <div class="justify-center items-center ml-2">
                     <p class="text-[12px] font-semibold text-white">VALORANT</p>
@@ -135,7 +138,8 @@
                     <ion-icon name="radio-button-on" class="ml-6 text-red-500"></ion-icon>
                     <p class="text-[15px] text-white ml-1">6.6K</p>
                 </div>
-            </div><div class="flex items-center">
+            </div>
+            <div class="flex items-center">
                 <img src="{{ asset('images/logos/valo2.jpg') }}" class="w-10 ml-2 mt-2 rounded-full" alt="">
                 <div class="justify-center items-center ml-2">
                     <p class="text-[12px] font-semibold text-white">VALORANT</p>
@@ -147,16 +151,61 @@
                 </div>
             </div>
         </div>
-    </div
+    </div>
+    <div class="z-0 bg-gray-900 w-full h-full">
+        <div class="content mt-[60px] ml-[50px] ml-[216px] h-full">
+            <div class="m-8">
+                <div class="flex p-2 justify-center">
+                    <img src="{{ asset('images/logos/valo.jpg') }}" class="w-[435px] m-2" alt="">
+                    <img src="{{ asset('images/logos/valo.jpg') }}" class="w-[435px] m-2" alt="">
+                </div>
+                <p class="font-bold text-lg text-white"><span class="text-purple-400">Live channels</span> we think
+                    you'll like</p>
+                <div class="flex">
+                    <iframe class=" w-[23rem] m-2"
+                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                        allowfullscreen></iframe>
+                    <iframe class=" w-[23rem] m-2"
+                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                        allowfullscreen></iframe>
+                    <iframe class=" w-[23rem] m-2"
+                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                        allowfullscreen></iframe>
+                    <iframe class=" w-[23rem] m-2"
+                        src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                        allowfullscreen></iframe>
+                </div>
+                <hr class="mt-5">
+            </div>
+            <div class="m-5">
+                <p class="font-bold text-lg text-white">Recommended<span class="text-purple-400"> Dota 2</span> channels</p>
+            </div>
+            <div class="flex">
+                <iframe class=" w-[23rem] m-2"
+                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                    allowfullscreen></iframe>
+                <iframe class=" w-[23rem] m-2"
+                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                    allowfullscreen></iframe>
+                <iframe class=" w-[23rem] m-2"
+                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                    allowfullscreen></iframe>
+                <iframe class=" w-[23rem] m-2"
+                    src="https://www.youtube.com/embed/watch?v=J9A3MgXclN0&list=RDbGsMkd8qHWI&index=27?autoplay=0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.js" defer></script>
 
     <script>
-        function OpenSideBar(){
+        function OpenSideBar() {
             document.querySelector('.sidebar').classList.toggle('left-[-300px]');
+            document.querySelector('.content').classList.toggle('ml-[50px]');
         }
 
-        function OpenProfileAccount(){
+        function OpenProfileAccount() {
             document.querySelector('.profile').classList.toggle('hidden');
         }
     </script>
