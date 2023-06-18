@@ -32,14 +32,17 @@
                 <div>
                     <button id="profilButton"><img src="{{ asset('images/logos/accountProfile.png') }}"
                             class="rounded-full w-7" onclick="OpenProfileAccount()" alt=""></button>
-                    <div class="profile absolute right-6 mt-2 w-48 hidden bg-gray-700 rounded-md shadow-lg text-white">
+                    <div class="profile absolute right-6 mt-2 w-48 hidden bg-gray-700 rounded-md shadow-lg text-white"
+                        id="profile">
                         <div class="flex items-center">
                             <img src="{{ asset('images/logos/accountProfile.png') }}" width="40"
                                 class="rounded-full mt-2 ml-2" alt="">
                             <h2 class="ml-3">Guest #2391</h2>
                         </div>
-                        <a href="" class="block px-4 py-2 text-center">Sign Up</a>
-                        <a href="" class="block px-4 py-2 text-center">Login</a>
+                        <div class="justify-center items-center">
+                            <button class="block px-4 py-2" onclick="openModalRegistration()">Sign Up</button>
+                            <button class="block px-4 py-2" onclick="openModalLogin()">Login</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,6 +155,105 @@
             </div>
         </div>
     </div>
+
+    {{-- Modals Login --}}
+    <!-- Latar belakang gelap -->
+    <div class="fixed inset-0 flex items-center justify-center z-10 hidden" id="modalBackdropLogin">
+        <div class="bg-black opacity-50 fixed inset-0"></div>
+        <!-- Modal -->
+        <div class="bg-gray-800 w-96 rounded-[20px] p-8 relative">
+            <h2 class="text-2xl font-bold mb-4 text-center text-purple-400">Welcome Back!</h2>
+            <form>
+                <!-- Isi formulir login disini -->
+                <div class="mb-4">
+                    <label class="block text-white text-sm font-bold mb-2" for="username">Username</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="username" type="text" placeholder="Username">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-white text-sm font-bold mb-2" for="password">Password</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="password" type="password" placeholder="Password">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" onclick="closeModalLogin()">Close</button>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {{-- End modals Login --}}
+
+    {{-- Registration Login --}}
+    <div class="fixed inset-0 flex items-center justify-center z-10 hidden" id="modalBackdropRegistration">
+        <div class="bg-black opacity-50 fixed inset-0"></div>
+        <!-- Modal -->
+        <div class="bg-gray-800 w-96 rounded-[20px] p-8 relative">
+            <h2 class="text-2xl font-bold mb-4 text-center text-purple-400">Welcome To Rypple</h2>
+            <form>
+                <!-- Isi formulir login disini -->
+                <div class="mb-4">
+                    <label class="block text-white text-sm font-bold mb-2" for="username">Username</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="username" type="text" placeholder="Username">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-white text-sm font-bold mb-2" for="password">Password</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="password" type="password" placeholder="Password">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" onclick="closeModalRegistration()">Close</button>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline items-center"
+                        type="submit">Next</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="fixed inset-0 flex items-center justify-center z-10" id="modalBackdropRegistration">
+        <div class="bg-black opacity-50 fixed inset-0"></div>
+        <!-- Modal -->
+        <div class="bg-gray-800 w-96 rounded-[20px] p-8 relative">
+            <h2 class="text-2xl font-bold mb-4 text-center text-purple-400">Welcome To Rypple</h2>
+            <form>
+                <!-- Isi formulir login disini -->
+                <div class="mb-4">
+                    <label class="block text-white text-sm font-bold mb-2" for="phonenumber">Phone Number</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        id="phonenumber" type="number" placeholder="08xxxxxxxxx">
+                        <a href="" class="text-white underline underline-offset-1">Use Email Instead?</a>
+                </div>
+                <div class="mb-2">
+                    <p class="text-white text-center"><span class="text-purple-400">Rypple</span> may use your phone number for verification or issues regarding your account</p>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button" onclick="closeModalRegistration()">Close</button>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline items-center"
+                        type="submit" onclick="">Next</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    {{-- Registration modals Login --}}
+
     <div class="z-0 bg-gray-900 w-full h-full">
         <div class="content mt-[60px] ml-[50px] ml-[216px] h-full">
             <div class="m-8 mt-4">
@@ -172,7 +274,8 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer ">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer ">LIVE:BetBoom
+                                    Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
                                 <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
                                 <p class="text-gray-400 cursor-pointer">Dota 2</p>
@@ -187,7 +290,8 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom
+                                    Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
                                 <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
                                 <p class="text-gray-400 cursor-pointer">Dota 2</p>
@@ -202,7 +306,8 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom
+                                    Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
                                 <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
                                 <p class="text-gray-400 cursor-pointer">Dota 2</p>
@@ -217,7 +322,8 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom
+                                    Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
                                 <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
                                 <p class="text-gray-400 cursor-pointer">Dota 2</p>
@@ -232,7 +338,8 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom
+                                    Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
                                 <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
                                 <p class="text-gray-400 cursor-pointer">Dota 2</p>
@@ -247,7 +354,8 @@
                             <img src="{{ asset('images/logos/accountProfile.png') }}"
                                 class="rounded-full w-10 h-10 m-2" alt="">
                             <div class="flex-col flex">
-                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom Team vs. Evil
+                                <p class="text-white whitespace-nowrap overflow-ellipsis cursor-pointer">LIVE:BetBoom
+                                    Team vs. Evil
                                     Geniuses - Dream League Sesson 2</p>
                                 <p class="text-gray-400 cursor-pointer">ESL_DOTA2</p>
                                 <p class="text-gray-400 cursor-pointer">Dota 2</p>
@@ -275,6 +383,30 @@
         function OpenProfileAccount() {
             document.querySelector('.profile').classList.toggle('hidden');
         }
+
+        function openModalLogin() {
+            document.getElementById('modalBackdropLogin').classList.remove('hidden');
+            document.querySelector('.profile').classList.toggle('hidden');
+        }
+
+        function closeModalLogin() {
+            document.getElementById('modalBackdropLogin').classList.add('hidden')
+        }
+
+        function openModalRegistration() {
+            document.getElementById('modalBackdropRegistration').classList.remove('hidden');
+            document.querySelector('.profile').classList.toggle('hidden');
+        }
+
+        function closeModalRegistration() {
+            document.getElementById('modalBackdropRegistration').classList.add('hidden')
+        }
+
+        document.getElementById('modalBackdropLogin').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeModalLogin();
+            }
+        });
     </script>
 </body>
 
